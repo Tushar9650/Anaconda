@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background-image: url("1.jpg");
+    /* .. k means hai yeh k yeh ak folder bahar ayey ga phir img->bg.jpg pr jayega */
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#scoreBox {
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+}
+
+#highScore {
+    position: absolute;
+    top: 50px;
+    right: 83px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+#board {
+    visibility: 0.8;
+    /* background: linear-gradient(rgb(170,236,170),rgb(236,236,167)); */
+    background: url("https://thumbs.dreamstime.com/b/ladder-snake-game-funny-frame-children-64850196.jpg");
+    background-size:cover;
+    background-repeat:repeat;
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px solid rgb(240, 227, 227);
+    display: grid;
+    border-radius: 5px;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    object-fit: cover;
+}
+
+.head {
+    background: linear-gradient(rgb(233, 122, 122), rgb(184, 184, 74));
+    border: 2px solid purple;
+    transform: scale(1.02);
+    /* border-radius: 9 px; */
+
+}
+
+.snake {
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 6px;
+
+}
+
+.food {
+    background: linear-gradient(red, purple);
+    border: .25vmin solid rgb(0, 0, 0);
+    border-radius: 8px;
+
+}
+
+.div{
+    display:inline-table;
+    color: red;
+}
